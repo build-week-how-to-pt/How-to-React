@@ -38,25 +38,26 @@ class signUp extends React.Component{
     render(){
         return(
             <div class="jumbotron">
-                <h2>Create A New Account</h2>
+                <h2>Sign up</h2>
                 <form class="form-block" onSubmit={this.signUp}>
-                Username:<input type="text"
+                <input className="form__input" type="text"
                       name="username"
                       value={this.state.username}
                       onChange={this.changeHandler}
                       placeholder="username" /> 
                       <br /> <br />
-                Password:<input type="password"
+                <input className="form__input" type="password"
                       name="password"
                       value={this.state.password}
                       onChange={this.changeHandler}
                       placeholder="password" />
                       <br /> <br /> 
-                Type:  <input type="text"
+                  <input className="form__input" type="text"
                       name="type"
                       value={this.state.type}
                       onChange={this.changeHandler} 
-                      placeholder="Type" /> <br />  
+                      placeholder="Type" /> <br /> 
+                      <br /> 
 
                 <button class="btn btn-success" type = "submit">SignUp</button>        
                 </form>

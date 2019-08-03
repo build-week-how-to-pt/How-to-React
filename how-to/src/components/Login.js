@@ -40,9 +40,9 @@ class Login extends React.Component {
 			<form class="form-inline" onSubmit={this.Login}>
 				{errorMessage && <p className="error">{errorMessage}</p>}
 				
-				<input type="text" name="username" placeholder="Username" value={username} onChange={this.handleChange} />
+				<input className="form__input" type="text" name="username" placeholder="Username" value={username} onChange={this.handleChange} />
 				<br /> <br />
-				<input type="password" name="password" placeholder="Password" value={password} onChange={this.handleChange} /><br />
+				<input className="form__input"  type="password" name="password" placeholder="Password" value={password} onChange={this.handleChange} /><br />
 
 				<button class="btn btn-success" type="submit">Login</button>
 			</form>
