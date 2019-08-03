@@ -36,11 +36,11 @@ class Guides extends React.Component{
                         <hr />
                         <h3> <span class="badge badge-success">Description</span> {Guides.description}</h3>
                         <div className="recipes__box">
-                        <p class="jumbotron">{`step_1: ${Guides.step_1}`}</p>
-                        <p class="jumbotron">{`step_2: ${Guides.step_2}`}</p>
-                        <p  class="jumbotron">{`step_3: ${Guides.step_3}`}</p>
-                        <p class="jumbotron">{`step_4: ${Guides.step_4}`}</p>
-                        <p class="jumbotron">{`step_5: ${Guides.step_5}`}</p>
+                        <p class="jumbotron"> <strong class="badge badge-success" >step-1 </strong> {Guides.step_1}</p>
+                        <p class="jumbotron"> <strong class="badge badge-success" >step-2 </strong> :- {Guides.step_2}</p>
+                        <p  class="jumbotron"> <strong class="badge badge-success" >step-3 </strong>:- {Guides.step_3}</p>
+                        <p class="jumbotron"> <strong class="badge badge-success" > step-4</strong> :- {Guides.step_4}</p>
+                        <p class="jumbotron"><strong class="badge badge-success" > step-5</strong>:- {Guides.step_5}</p>
                         <a class="btn btn-dark" href= {`${Guides.link}`}>Watch Video</a>
                         <br></br>
                         </div>
