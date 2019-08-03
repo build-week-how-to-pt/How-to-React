@@ -35,15 +35,16 @@ class Login extends React.Component {
 		const { isLoading, errorMessage } = this.props
 
 		return (
-      <div className="container">
+      <div class="jumbotron">
       <h3>Sign in </h3>
-			<form onSubmit={this.Login}>
+			<form class="form-inline" onSubmit={this.Login}>
 				{errorMessage && <p className="error">{errorMessage}</p>}
 				
-				<input type="text" name="username" placeholder="Username" value={username} onChange={this.handleChange} /><br />
+				<input type="text" name="username" placeholder="Username" value={username} onChange={this.handleChange} />
+				<br /> <br />
 				<input type="password" name="password" placeholder="Password" value={password} onChange={this.handleChange} /><br />
 
-				<button type="submit">Login</button>
+				<button class="btn btn-success" type="submit">Login</button>
 			</form>
       </div>
 		)

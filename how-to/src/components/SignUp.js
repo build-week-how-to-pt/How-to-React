@@ -1,5 +1,4 @@
-import React from 'react'
-
+import React from 'react';
 import axios from "axios";
 
 
@@ -38,23 +37,28 @@ class signUp extends React.Component{
     }
     render(){
         return(
-            <div>
+            <div class="jumbotron">
                 <h2>Create A New Account</h2>
-                <form onSubmit={this.signUp}>
-                username:<input type="text"
+                <form class="form-block" onSubmit={this.signUp}>
+                Username:<input type="text"
                       name="username"
                       value={this.state.username}
-                      onChange={this.changeHandler} /> <br />
-                password:<input type="password"
+                      onChange={this.changeHandler}
+                      placeholder="username" /> 
+                      <br /> <br />
+                Password:<input type="password"
                       name="password"
                       value={this.state.password}
-                      onChange={this.changeHandler} /> <br /> 
-                type: <input type="text"
+                      onChange={this.changeHandler}
+                      placeholder="password" />
+                      <br /> <br /> 
+                Type:  <input type="text"
                       name="type"
                       value={this.state.type}
-                      onChange={this.changeHandler} /> <br />  
+                      onChange={this.changeHandler} 
+                      placeholder="Type" /> <br />  
 
-                <button type = "submit">SignUp</button>        
+                <button class="btn btn-success" type = "submit">SignUp</button>        
                 </form>
             </div>
         )

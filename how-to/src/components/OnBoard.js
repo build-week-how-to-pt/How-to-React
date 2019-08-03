@@ -5,7 +5,8 @@ import Login from './Login'
 const Onboarding = () => {
     return ( 
         <div>
-        <Login />,
+        <Login />
+        <br></br>
         <SignUp />
         </div>
      )

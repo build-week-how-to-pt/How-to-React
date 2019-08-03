@@ -1,6 +1,6 @@
 import React from 'react';
 import axios from 'axios';
-import header from './Header'
+// import Header from './Header'
 
 class Guides extends React.Component{
     constructor(){
@@ -23,20 +23,27 @@ class Guides extends React.Component{
         }
         return(
             <div>
+                <br />
                 {this.state.Guides.map((Guides,index)=>{
                     return(
-                    <div key={index}>
-                    <header />
-                        <h2>{`id: ${Guides.id}`}</h2>
-                        <h2>{`title: ${Guides.title}`}</h2>
-                        <h2>{`type: ${Guides.type}`}</h2>
-                        <h3>{`description: ${Guides.description}`}</h3>
-                        <p>{`step_1: ${Guides.step_1}`}</p>
-                        <p>{`step_2: ${Guides.step_2}`}</p>
-                        <p>{`step_3: ${Guides.step_3}`}</p>
-                        <p>{`step_4: ${Guides.step_4}`}</p>
-                        <p>{`step_5: ${Guides.step_5}`}</p>
-                        {/* <link>{`link: ${Guides.link}`}</link> */}
+                        
+                    <div class="alert alert-success" role="alert" key={index}>
+                    <div >
+                        {/* <h2>{`id: ${Guides.id}`}</h2> */}
+                        <h2 >{` ${Guides.title}`}</h2>
+                        <h2 >{`type: ${Guides.type}`}</h2>
+                    </div>
+                        <hr />
+                        <h3>{`Description:- ${Guides.description}`}</h3>
+                        <div >
+                        <p class="jumbotron">{`step_1: ${Guides.step_1}`}</p>
+                        <p class="jumbotron">{`step_2: ${Guides.step_2}`}</p>
+                        <p  class="jumbotron">{`step_3: ${Guides.step_3}`}</p>
+                        <p class="jumbotron">{`step_4: ${Guides.step_4}`}</p>
+                        <p class="jumbotron">{`step_5: ${Guides.step_5}`}</p>
+                        <a class="btn btn-dark" href= {`${Guides.link}`}>Watch Video</a>
+                        <br></br>
+                        </div>
                     </div>
                     )
               })}      
