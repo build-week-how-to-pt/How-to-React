@@ -10,9 +10,7 @@ class App extends React.Component {
 	render() {
 		return (
 			<div className="container">
-			<header className="App-header">
-          <h1 className="App-title">How To ...</h1>  
-        </header>
+		<br />
 				<PrivateRoute exact path="/" component={Guides} />
 				<Route exact path="/login" component={Onboarding} />
 			</div>

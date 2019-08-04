@@ -8,6 +8,7 @@ const Onboarding = () => {
         <Login />
         <br></br>
         <SignUp />
+    
         </div>
      )
 }

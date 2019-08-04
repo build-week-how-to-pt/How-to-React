@@ -1,5 +1,7 @@
 body {
-  background:#f3f3f3;
+  background:#000000;
+  background-image: url(./components/kiwi-thompson-r0wgHisWr4o-unsplash.jpg)
+
 }
 
 img {
@@ -19,35 +21,35 @@ button:focus {
   text-align: center;
   
 }
-
+.Quotes{
+  color: #fff;
+  font-size: 1em;
+}
 .App-header {
-  background-color: #305c3d;
+  background-color: #767474;
   height: 90px;
   padding: 30px;
   color: white;
   margin-bottom: 2rem;
+  position: fixed;
+  top: 0;
+  width: 72.5%;
+  z-index: 1;
+  
 }
 
 .App-title {
-  font-size: 1.5em;
+  font-size: 3em;
+  margin-left: 400px;
+
 }
 
-.recipe_buttons {
-  border: solid 2px #e74c3c;
-  background: transparent;
-  padding: 0.4rem 0.6rem;
-  margin: 0 0.2rem;
-  border-radius: 1px;
-  font-size: 0.8rem;
-  text-transform: uppercase;
-  font-weight: 500;
-  margin-left: 0.7rem;
-}
+
 .type{
   font-style: italic;
   font-family: monospace;
 }
-.recipes__box {
+.guide__box {
   background: #fff;
   padding-bottom: 2rem;
   border-radius: 5px;
@@ -55,7 +57,9 @@ button:focus {
   text-align: left;
   overflow: hidden;
 }
-
+#guide-body{
+  margin-top: 46px;
+}
 .form__input {
   background: transparent;
   border: 0;
