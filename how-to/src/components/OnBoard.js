@@ -4,7 +4,10 @@ import Login from './Login'
 
 const Onboarding = () => {
     return ( 
-        <div>
+        <div className="onboardPage">
+            <br></br>
+            <h1 style={{color:"white", padding:"10px"}}>How To </h1>
+            <br></br>
         <Login />
         <br></br>
         <SignUp />

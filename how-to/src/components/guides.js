@@ -44,9 +44,9 @@ class Guides extends React.Component{
                         <p  class="jumbotron"> <strong class="badge badge-success" >step-3 </strong>:- {Guides.step_3}</p>
                         <p class="jumbotron"> <strong class="badge badge-success" > step-4</strong> :- {Guides.step_4}</p>
                         <p class="jumbotron"><strong class="badge badge-success" > step-5</strong>:- {Guides.step_5}</p>
-                        <a class="btn btn-dark" href= {`${Guides.link}`}>Watch Video</a>
                         <br></br>
                         </div>
+                        <a class="btn btn-dark" href= {`${Guides.link}`}>Watch Video</a>
                     </div>
                     )
               })}      

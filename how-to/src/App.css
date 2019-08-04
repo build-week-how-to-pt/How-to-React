@@ -1,6 +1,6 @@
 body {
-  background:#000000;
-  background-image: url(./components/kiwi-thompson-r0wgHisWr4o-unsplash.jpg)
+  background:#ffffff;
+  /* background-image: url(./components/kiwi-thompson-r0wgHisWr4o-unsplash.jpg) */
 
 }
 
@@ -33,7 +33,7 @@ button:focus {
   margin-bottom: 2rem;
   position: fixed;
   top: 0;
-  width: 72.5%;
+  width: 77%;
   z-index: 1;
   
 }
@@ -43,13 +43,16 @@ button:focus {
   margin-left: 400px;
 
 }
-
+.onboardPage{
+  background-image: url(./components/joel-filipe-VuwAfoHpxgs-unsplash.jpg)
+}
 
 .type{
   font-style: italic;
   font-family: monospace;
 }
 .guide__box {
+  display: flex;
   background: #fff;
   padding-bottom: 2rem;
   border-radius: 5px;
